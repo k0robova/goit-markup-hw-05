@@ -819,13 +819,13 @@ input {
 .icons-check {
   fill: var(--white-color);
 }
-.span-icon-check {
+/* .span-icon-check {
   display: inline-flex;
-}
+} */
 .icons-input {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   display: inline-flex;
 }
 .privacy-link {
