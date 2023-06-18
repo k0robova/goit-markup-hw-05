@@ -471,6 +471,9 @@ input {
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04;
   color: var(--white-color);
   padding-left: 16px;
   padding-top: 8px;
@@ -510,6 +513,7 @@ input {
   background-color: var(--ocean-color);
 }
 .icons-send {
+  margin-left: 16px;
   fill: var(--white-color);
 }
 /*------------------------------------------PORTFOLIO-------------------------------------*/
@@ -707,7 +711,7 @@ input {
 .modal-form {
 }
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .modal-label {
   font-size: 12px;
@@ -755,18 +759,20 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* margin-bottom: 16px; */
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   outline: transparent;
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus {
   border-color: var(--primary-color);
+}
+.modal-check {
+  margin-bottom: 24px;
 }
 .input-check {
 }
@@ -803,10 +809,26 @@ input {
 .input-check:focus + .check-text span {
   border-color: var(--ocean-color);
 }
+.icons-check {
+  fill: var(--white-color);
+}
+.icons-input {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+}
+.privacy-link {
+}
 .modal-send-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white-color);
   padding: 16px 32px;
   border-radius: 4px;

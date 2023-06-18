@@ -389,11 +389,10 @@
             <div class="modal-footer">
                 <p class="label-title">Subscribe</p>
                 <form class="footer-form">
-                    <!-- <div class="footer-modal"></div> -->
-                    <label>
+                    <label class="footer-label">
                         <input type="email" name="footer-email" class="footer-input" placeholder="E-mail"> </label>
                     <button type="submit" class="footer-btn">Subscribe
-                        <svg class="icons-send" width="24" height="20">
+                        <svg class="icons-send" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -444,20 +443,23 @@
 
 
                 <div class="modal-field">
-                    <label for="modal-text" class="modal-label">Comment</label>
-                    <textarea name="modal-text" placeholder="Text input" class="modal-textarea"></textarea>
+                    <label for="user-comment" class="modal-label">Comment</label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Text input"
+                        class="modal-textarea"></textarea>
                 </div>
-                <div class="modal-field">
-                    <input type="checkbox" name="policy" id="policy" class="input-check visually-hidden" value="true">
-                    <label for="policy" class="check-text "> <span><svg clas="icons-input" width="10" height="8">
+                <div class="modal-check">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" class="input-check visually-hidden"
+                        value="true">
+                    <label for="user-privacy" class="check-text "> <span><svg class="icons-check" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
-                            </svg></span> I accept the terms and conditions of the&nbsp;<a href="">Privacy
+                            </svg></span> I accept the terms and conditions of the&nbsp;<a href=""
+                            class="privacy-link">Privacy
                             Policy</a>
                     </label>
                 </div>
-            </form>
-            <button typ="submit" class="modal-send-btn">Send</button>
 
+                <button type="submit" class="modal-send-btn">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
