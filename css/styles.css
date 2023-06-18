@@ -447,6 +447,7 @@ input {
 }
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .label-title {
   display: block;
